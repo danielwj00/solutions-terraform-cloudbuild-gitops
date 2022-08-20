@@ -19,7 +19,7 @@ locals {
 
 resource "google_compute_instance" "http_server" {
   project      = var.project
-  zone         = "asia-southeast2"
+  zone         = "asia-southeast2-a"
   name         = "${local.network}-apache2-instance"
   machine_type = "e2-micro"
 
